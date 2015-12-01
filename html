@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone switch</title>
+  <style type="text/css" media="screen">
+    .checkbox-theme-state{display: inline-block;text-align: left;}
+    .checkbox-theme-state:hover{cursor: pointer;}
+    .checkbox-theme-state input{display: none;}
+    .checkbox-theme-state input+span{width: 90px;height: 50px;display: inline-block;border-radius: 50px;background-color: #fff;border:3px solid #ececec;transition: all 0.3s ease-in-out;position: relative;}
+    .checkbox-theme-state input:checked+span{transform: translate3d(0%,0,0);transition: all 0.3s ease-in-out;background-color: #53D769;border-color: #53D769;}
+    .checkbox-theme-state input+span>i{height: 50px;width: 50px;display: inline-block;background-color: #fff;border-radius: 50%;transition: all 0.3s ease-in-out;box-shadow: 0 0 3px 0px rgba(0,0,0,0.15),0 5px 30px 0px rgba(0,0,0,0.2),0 8px 10px 1px rgba(0,0,0,0.2) ;position: relative;z-index: 2}
+    .checkbox-theme-state input:checked+span>i{transform: translate3d(40px,0,0);}
+    .checkbox-theme-state input+span>b{position: absolute;z-index:0;background: #fff;border-radius: 50px;width: 100%;height: 100%;left: 0;right: 0;transition:transform 0.3s ease-in-out;transform: scale(1);transform-origin:70px center;}
+    .checkbox-theme-state input:checked+span>b{transform: scale(0);}
+  
+    /*demo*/
+    body {text-align: center;}
+    body label{transform: scale(2);position:fixed;top: 40%}
+  </style>
+</head>
+<body>
+  <label class="checkbox-theme-state"><input type="checkbox" checked name="a" value=""><span><i></i><b></b></span></label>
+</body>
+</html>
